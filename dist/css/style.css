@@ -1,1 +1,3 @@
-@import "normalize.min.css";
+@import "./resets/normalize.min.css";
+@import "./resets/reset.min.css";
+@import "./resets/type-scale.css";
