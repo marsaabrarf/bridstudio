@@ -3,25 +3,25 @@
 @import "./resets/type-scale.css";
 
 .p-16 {
-	padding: 16px;
+  padding: 16px;
 }
 .p-rl-16 {
   padding: 0 16px;
 }
 .p-rl-24 {
-	padding: 0 24px;
+  padding: 0 24px;
 }
 .p-tb-16 {
   padding: 16px 0;
 }
 .mt-16 {
-	margin-top: 16px;
+  margin-top: 16px;
 }
 .mt-32 {
-	margin-top: 32px;
+  margin-top: 32px;
 }
 .mb-16 {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 .main-black {
   color: #151515;
@@ -52,8 +52,12 @@
   align-items: center;
   position: fixed;
   z-index: 999 !important;
-	background-color: #151515;
-	box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.75);
+	transition: background-color 200ms linear, box-shadow 200ms;
+}
+.scrolled {
+  background-color: #151515;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.75);
+  transition: background-color 200ms linear, box-shadow 200ms;
 }
 .appLogo,
 .hamburger {
@@ -69,9 +73,9 @@
   justify-content: flex-end;
 }
 .hamburger::before {
-	font-family: "Material Icons";
+  font-family: "Material Icons";
   content: "\e5d2";
-	font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 /* .show-nav {
 	top: 0;
@@ -86,20 +90,16 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
   z-index: 2;
 }
 .header-bg::before {
   content: "";
   position: inherit;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   opacity: 0.25;
-	width: 100%;
-	height: 100vh;
+  width: inherit;
+  height: inherit;
   background: center / cover no-repeat
     url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80");
 }
@@ -107,32 +107,33 @@
   position: inherit;
   top: 20vh;
   text-align: center;
-	width: inherit;
-	height: inherit;
+  width: inherit;
+  height: inherit;
 }
 .cta-button {
-	background-color: #f2f2f2;
-	color: #151515;
-	display: block;
-	font-weight: bold;
-	padding: 0.85rem 1.5rem;
-	max-width: 150px;
-	margin: 24px auto;
+  background-color: #f2f2f2;
+  color: #151515;
+  display: block;
+  font-weight: bold;
+  padding: 0.85rem 1.5rem;
+  max-width: 150px;
+  margin: 24px auto;
 }
 .swipe-up {
-	position: inherit;
-	bottom: 1.35rem;
-	width: 100%;
-	text-align: center;
+  position: inherit;
+  bottom: 1.35rem;
+  width: 100%;
+  text-align: center;
 }
 .swipe-up::before {
-	font-family: "Material Icons";
+  font-family: "Material Icons";
   content: "\e5ce";
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 main {
   position: relative;
   top: 100vh;
   background-color: #151515;
+	border-radius: 20px;
   z-index: 10 !important;
 }
