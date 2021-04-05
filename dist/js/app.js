@@ -1,4 +1,4 @@
 $(document).scroll(function () {
   var $nav = $(".appBar");
-  $nav.toggleClass("scrolled", $(this).scrollTop() > $(window).height() - 64);
+  $nav.toggleClass("scrolled", $(this).scrollTop() > $(window).height());
 });
