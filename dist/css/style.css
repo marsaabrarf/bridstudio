@@ -1,6 +1,6 @@
-@import url("../css/normalize.min.css");
-@import url("../css/reset.min.css");
-@import url("../css/type-scale.css");
+@import "./normalize.min.css";
+@import "./reset.min.css";
+@import "./type-scale.css";
 
 h1 {
   color: aqua;
