@@ -1,34 +1,8 @@
 @import "./resets/normalize.min.css";
 @import "./resets/reset.min.css";
 @import "./resets/type-scale.css";
+@import "./margin-padding.css";
 
-.p-16 {
-  padding: 16px;
-}
-.p-rl-16 {
-  padding: 0 16px;
-}
-.p-rl-24 {
-  padding: 0 24px;
-}
-.p-tb-16 {
-  padding: 16px 0;
-}
-.mt-16 {
-  margin-top: 16px;
-}
-.mt-32 {
-  margin-top: 32px;
-}
-.mb-16 {
-  margin-bottom: 16px;
-}
-.mr-16 {
-  margin-right: 16px;
-}
-.mr-32 {
-  margin-right: 32px;
-}
 .main-black {
   color: #151515;
 }
@@ -89,7 +63,7 @@
 	position: absolute;
 	height: 100vh;
 } */
-.hide-nav {
+/* nav ul {
   display: none;
 }
 .header-bg {
@@ -124,7 +98,7 @@
   padding: 0.85rem 1.5rem;
   max-width: 150px;
   margin: 24px auto;
-}
+} */
 .swipe-up {
   position: inherit;
   bottom: 1.35rem;
@@ -140,8 +114,6 @@ main {
   position: relative;
   top: 100vh;
   background-color: #151515;
-  border-radius: 20px;
-  box-shadow: 0px -4px 50px rgba(0, 0, 0, 0.75);
   z-index: 10 !important;
 }
 .projects {
@@ -179,4 +151,52 @@ main {
   font-size: 1rem;
   margin-left: 4px;
   color: #949494;
+}
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 100%; /*16px*/
+  }
+  .appBar {
+    padding: 0 7rem;
+    height: 5rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: inherit;
+    flex-basis: 50%;
+    height: inherit;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+  .header-bg::before {
+    background: center / cover no-repeat
+      url("https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1440&h=1080&q=90");
+  }
+  .projects {
+    max-width: 960px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  .card {
+    flex-basis: 32%;
+  }
 }

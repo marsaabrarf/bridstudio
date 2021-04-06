@@ -32,6 +32,10 @@
       name="keywords"
       content="brid, studio, surabaya, indonesia, user interface, ui design, web, game, virtual reality, augmented reality, software engineering, web development, game development"
     />
+    <!-- CSS First Contentful Paint -->
+    <style>
+      nav ul{display:none}.header-bg{position:fixed;width:100%;height:100vh;top:0;left:0;z-index:2}.header-bg::before{content:"";position:inherit;opacity:.25;width:inherit;height:inherit;background:center / cover no-repeat url(https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=425&q=80)}.top-wrapper{position:inherit;top:20vh;text-align:center;width:inherit;height:inherit}.cta-button{background-color:#f2f2f2;color:#151515;display:block;font-weight:700;padding:.85rem 1.5rem;max-width:150px;margin:24px auto}
+    </style>
     <!-- Google Fonts & Material Icons -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -55,6 +59,7 @@
               src="./assets/svg/bridstudio-logo.svg"
               height="24"
               alt="Brid Studio Logo"
+              title="Brid Studio"
           /></a>
         </div>
         <div class="hamburger"></div>
@@ -91,97 +96,100 @@
         <p class="light-grey">
           Our latest projects with some of our clients&period;
         </p>
-        <section class="card mt-32">
-          <img
-            src="https://images.unsplash.com/photo-1553671804-64f983d71ab7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=425&q=80"
-            alt="Amadia Clothing Project"
-            loading="lazy"
-            title="Amadia Clothing"
-          />
-          <article class="card-text">
-            <p class="small-text light-grey">Social Media Page</p>
-            <h4 class="mt-16">Amadia Clothing</h4>
-            <section>
-              <p class="light-grey">
-                Self&dash;manufactured Hijab in a simple yet beauty&period;
-              </p>
-              <div class="learn-more">
-                <a href="#" class="mr-32">
-                  <span>Learn more</span>
-                </a>
-                <a
-                  href="https://www.instagram.com/amadiaclothing/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>Instagram</span>
-                </a>
-              </div>
-            </section>
-          </article>
-        </section>
+        <div class="cards">
+          <section class="card mt-32">
+            <img
+              src="https://images.unsplash.com/photo-1553671804-64f983d71ab7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=425&q=80"
+              alt="Amadia Clothing Project"
+              loading="lazy"
+              title="Amadia Clothing"
+            />
+            <article class="card-text">
+              <p class="small-text light-grey">Social Media Page</p>
+              <h4 class="mt-16">Amadia Clothing</h4>
+              <section>
+                <p class="light-grey">
+                  Self&dash;manufactured Hijab in a simple yet beauty based on
+                  Surabaya&period;
+                </p>
+                <div class="learn-more">
+                  <a href="#" class="mr-32">
+                    <span>Learn more</span>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/amadiaclothing/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </section>
+            </article>
+          </section>
 
-        <section class="card mt-32">
-          <img
-            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=425&q=80"
-            alt="Kakao Bites Project"
-            loading="lazy"
-            title="Kakao Bites"
-          />
-          <article class="card-text">
-            <p class="small-text light-grey">Landing Page</p>
-            <h4 class="mt-16">Kakao Bites</h4>
-            <section>
-              <p class="light-grey">
-                Famous for its crunchy brownie chips&comma; Kakao Bites has
-                something unique for everyone&period;
-              </p>
-              <div class="learn-more">
-                <a href="#" class="mr-32">
-                  <span>Learn more</span>
-                </a>
-                <a
-                  href="https://kakaobites.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>Website</span>
-                </a>
-              </div>
-            </section>
-          </article>
-        </section>
+          <section class="card mt-32">
+            <img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=425&q=80"
+              alt="Kakao Bites Project"
+              loading="lazy"
+              title="Kakao Bites"
+            />
+            <article class="card-text">
+              <p class="small-text light-grey">Landing Page</p>
+              <h4 class="mt-16">Kakao Bites</h4>
+              <section>
+                <p class="light-grey">
+                  Famous for its crunchy brownie chips&comma; Kakao Bites has
+                  something unique for everyone&period;
+                </p>
+                <div class="learn-more">
+                  <a href="#" class="mr-32">
+                    <span>Learn more</span>
+                  </a>
+                  <a
+                    href="https://kakaobites.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>Website</span>
+                  </a>
+                </div>
+              </section>
+            </article>
+          </section>
 
-        <section class="card mt-32">
-          <img
-            src="https://images.unsplash.com/photo-1585058180482-0de06c426133?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=425&q=80"
-            alt="Pare English Cafe Project"
-            loading="lazy"
-            title="Pare English Cafe"
-          />
-          <article class="card-text">
-            <p class="small-text light-grey">Landing Page</p>
-            <h4 class="mt-16">Pare English Cafe</h4>
-            <section>
-              <p class="light-grey">
-                Passion to be able to speak English that applies for
-                everyone&period;
-              </p>
-              <div class="learn-more">
-                <a href="#" class="mr-32">
-                  <span>Learn more</span>
-                </a>
-                <a
-                  href="https://pareenglishcafe.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>Website</span>
-                </a>
-              </div>
-            </section>
-          </article>
-        </section>
+          <section class="card mt-32">
+            <img
+              src="https://images.unsplash.com/photo-1585058180482-0de06c426133?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=425&q=80"
+              alt="Pare English Cafe Project"
+              loading="lazy"
+              title="Pare English Cafe"
+            />
+            <article class="card-text">
+              <p class="small-text light-grey">Landing Page</p>
+              <h4 class="mt-16">Pare English Cafe</h4>
+              <section>
+                <p class="light-grey">
+                  Passion to be able to speak English that applies for
+                  everyone&period;
+                </p>
+                <div class="learn-more">
+                  <a href="#" class="mr-32">
+                    <span>Learn more</span>
+                  </a>
+                  <a
+                    href="https://pareenglishcafe.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>Website</span>
+                  </a>
+                </div>
+              </section>
+            </article>
+          </section>
+        </div>
       </article>
     </main>
     <footer></footer>
