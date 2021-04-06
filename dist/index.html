@@ -34,7 +34,49 @@
     />
     <!-- CSS First Contentful Paint -->
     <style>
-      .visuallyhidden{font-size:0;overflow:hidden}body{background:#151515;color:#f2f2f2;font-family:sans-serif}nav ul{display:none}a{text-decoration:none;color:inherit}.header-bg{position:fixed;width:100%;height:100vh}.top-wrapper{position:inherit;top:20vh;text-align:center;width:inherit;height:inherit}main{position:relative;top:100vh}.swipe-up{position:inherit;bottom:1.35rem;width:100%;text-align:center}@media screen and (min-width:960px){html{font-size:100%}}
+      .visuallyhidden {
+        font-size: 0;
+        overflow: hidden;
+      }
+      body {
+        background: #151515;
+        color: #f2f2f2;
+        font-family: sans-serif;
+      }
+      nav ul {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .header-bg {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+      }
+      .top-wrapper {
+        position: inherit;
+        top: 20vh;
+        text-align: center;
+        width: inherit;
+        height: inherit;
+      }
+      main {
+        position: relative;
+        top: 100vh;
+      }
+      .swipe-up {
+        position: inherit;
+        bottom: 1.35rem;
+        width: 100%;
+        text-align: center;
+      }
+      @media screen and (min-width: 960px) {
+        html {
+          font-size: 100%;
+        }
+      }
     </style>
     <!-- Google Fonts & Material Icons -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -78,26 +120,61 @@
         </nav>
       </div>
       <div class="header-bg">
-        <article class="top-wrapper p-rl-16">
+        <div class="top-wrapper p-rl-16">
           <h2>
             We help you <span class="light-grey">fly</span><br />to your
             <br />imagination
           </h2>
-          <section>
+          <div>
             <p class="light-grey">
               Brid Studio works with brands to design and engineer digital
               products&period;
             </p>
             <a href="#" class="cta-button">Let&apos;s Talk</a>
-          </section>
-        </article>
+          </div>
+        </div>
         <div class="swipe-up">
           <p>Scroll Up</p>
         </div>
       </div>
     </header>
+
     <main>
-      <article class="projects p-16">
+      <!-- <article class="p-32">
+        <h3>Trusted by</h3>
+      </article> -->
+
+      <article class="top-article p-32 mb-64">
+        <h3>What We Do Best</h3>
+        <p class="light-grey">
+          Create experiences &amp; solve business problems&period;
+        </p>
+        <div class="what-we-do mt-32">
+          <section class="what-we-do-card mb-32">
+            <h4>Web Development</h4>
+            <p>
+              Create a stunning personalized website for your company to reach
+              potential customers anywhere anytime&period;
+            </p>
+          </section>
+          <section class="what-we-do-card mb-32">
+            <h4>Visual Branding</h4>
+            <p>
+              Visualize your branding and communicate your messages to the
+              world&comma; engage them&comma; and spark up your business&period;
+            </p>
+          </section>
+          <section class="what-we-do-card mb-32">
+            <h4>Social Media</h4>
+            <p>
+              Show your brand and personality through your social media and
+              reach larger audiences&period;
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <article class="projects p-32">
         <h3>Our Projects</h3>
         <p class="light-grey">
           Our latest projects with some of our clients&period;

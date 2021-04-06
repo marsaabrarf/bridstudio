@@ -124,6 +124,7 @@ main {
 .card {
   background-color: #202022;
   width: 100%;
+  max-width: 350px;
   flex-basis: 100%;
 }
 .card img {
@@ -145,6 +146,35 @@ main {
   font-size: 1rem;
   margin-left: 4px;
   color: #949494;
+}
+.top-article {
+  text-align: center;
+}
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+.what-we-do-card {
+  max-width: 400px;
+}
+.what-we-do-card h4 {
+  margin-top: 0.5rem;
+}
+.what-we-do-card::before {
+  font-family: "Material Icons";
+  font-size: 3rem;
+}
+.what-we-do-card:nth-of-type(1n)::before {
+  content: "\e86f";
+}
+.what-we-do-card:nth-of-type(2n)::before {
+  content: "\ea70";
+}
+.what-we-do-card:nth-of-type(3n)::before {
+  content: "\e817";
 }
 @media screen and (min-width: 960px) {
   html {
@@ -177,6 +207,7 @@ main {
   }
   .projects {
     max-width: 960px;
+    padding: 16px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -186,11 +217,21 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     flex-grow: 1;
   }
   .card {
     flex-basis: 32%;
+  }
+  .what-we-do {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .what-we-do-card {
+    flex-basis: 25%;
   }
 }
