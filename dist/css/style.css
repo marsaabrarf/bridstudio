@@ -213,6 +213,7 @@ aside {
 aside article {
   max-width: 720px;
   margin: auto;
+  padding: 32px 32px 128px 32px;
 }
 .biodata-card {
   display: flex;
@@ -233,6 +234,9 @@ aside article {
   order: 4;
 }
 footer {
+  position: relative;
+  z-index: 5;
+  margin-top: 600px;
   width: inherit;
   background-color: #202022;
   text-align: center;
