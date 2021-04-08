@@ -10,7 +10,7 @@
   color: #202022;
 }
 .light-grey {
-  color: #949494;
+  color: #adadad;
 }
 .light-white {
   color: #f2f2f2;
@@ -87,13 +87,20 @@
   height: inherit;
 } */
 .cta-button {
-  background-color: #f2f2f2;
-  color: #151515;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
   display: block;
   font-weight: bold;
   padding: 0.85rem 1.5rem;
   max-width: 150px;
   margin: 24px auto;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, #f2f2f2 50%) right;
+  background-size: 200%;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.cta-button:hover {
+  background-position: left;
+  color: #151515;
 }
 /* FCP */
 /* .swipe-up {
@@ -108,7 +115,7 @@
 /* FCP */
 main {
   background-color: #151515;
-  z-index: 10 !important;
+  z-index: 5 !important;
 }
 .projects {
   display: flex;
@@ -140,12 +147,15 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 }
+.card-text a:hover {
+  color: #adadad;
+}
 .learn-more span::after {
   font-family: "Material Icons";
   content: "\e89e";
   font-size: 1rem;
   margin-left: 4px;
-  color: #949494;
+  color: #adadad;
 }
 .top-article {
   text-align: center;
@@ -176,6 +186,44 @@ main {
 .what-we-do-card:nth-of-type(3n)::before {
   content: "\e817";
 }
+aside {
+  text-align: center;
+  position: inherit;
+}
+aside article {
+  max-width: 720px;
+  margin: auto;
+}
+.biodata-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.biodata-card > h4 {
+  order: 2;
+}
+.biodata-card > p {
+  order: 3;
+  padding: 0.5rem 1rem;
+  background-color: #202022;
+  color: #adadad;
+}
+.biodata-card > div {
+  order: 4;
+}
+footer {
+  width: inherit;
+  background-color: #202022;
+  text-align: center;
+}
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+footer hr {
+  border: 0.1px solid #adadad;
+}
 @media screen and (min-width: 960px) {
   html {
     font-size: 100%; /*16px*/
@@ -200,6 +248,17 @@ main {
     align-items: center;
     justify-content: space-around;
     flex-grow: 1;
+  }
+  .nav-transition::after {
+    background: none repeat scroll 0 0 #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .nav-transition:hover::after {
+    width: 100%;
   }
   .header-bg::before {
     background: center / cover no-repeat

@@ -4,6 +4,9 @@
 .p-32 {
   padding: 32px;
 }
+.p-64 {
+  padding: 64px;
+}
 .p-rl-16 {
   padding: 0 16px;
 }
@@ -13,11 +16,17 @@
 .p-tb-16 {
   padding: 16px 0;
 }
+.m-tb-32 {
+  margin: 32px 0;
+}
 .mt-16 {
   margin-top: 16px;
 }
 .mt-32 {
   margin-top: 32px;
+}
+.mt-64 {
+  margin-top: 64px;
 }
 .mb-16 {
   margin-bottom: 16px;

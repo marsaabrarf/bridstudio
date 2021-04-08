@@ -3,10 +3,10 @@ html {
 }
 body {
   background: #151515;
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  letter-spacing: 0.03rem;
+  /* letter-spacing: 0.03rem; */
   color: #f2f2f2;
 }
 p {
